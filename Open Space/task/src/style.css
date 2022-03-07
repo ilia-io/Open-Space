@@ -19,7 +19,8 @@ body {
   position: fixed;
   top: 40%;
   left: 10%;
-  transform: rotate(25deg);
+  transform: rotate(27deg);
+  transition: transform  6s ease-in;
 }
 
 .control-panel {

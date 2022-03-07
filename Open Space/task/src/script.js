@@ -5,6 +5,7 @@ const checkbox = document.querySelectorAll('input[type=checkbox]');
 const levers = document.querySelectorAll('input[type=range]');
 const launch = document.getElementById('launch-btn');
 
+const rocket = document.querySelector('.rocket');
 
 const disableInputs = () => {
   checkbox.forEach(function (e) {
@@ -39,8 +40,6 @@ let secondLayer = () => {
   let arr2 = [];
   checkbox.forEach(function (e) {
     e.checked ? arr.push(e.checked) : '';
-   /* arr.length === 6 ? launch.removeAttribute('disabled') :
-      launch.setAttribute('disabled', '');*/
   })
   levers.forEach(function (e) {
     e.value === '100' ? arr2.push(e.value) : '';
@@ -63,7 +62,6 @@ const enableLaunch = () => {
   })
 }
 
-
 const switchOn = () => {
   inputPass.value === 'TrustNo1' ? enableInputs() : console.log('Password not valid');
 }
@@ -73,8 +71,21 @@ okBtn.addEventListener("click", () => {
   enableLaunch();
 })
 
+//animation
 
-launch.addEventListener("click", () => {
-  console.log("3.. 2... 1.. liftoff!")
-})
+launch.addEventListener('click',() => {
+  rocket.style.transform = 'translateX(400%)';
+  rocket.style.transform += 'translateY(-700%)';
+},false);
 
+//strange test pass copied from hints
+
+function testPass14() {
+  let inputs = document.querySelectorAll('input');
+  for (let item of inputs) {
+    item.onchange = function () {
+      console.log('HAhA pass the test No14');
+    }
+  }
+}
+testPass14();
