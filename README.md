@@ -6,4 +6,4 @@ A simple web game uses HTML/CSS/JS, where you can launch a rocket into space! Fi
 
 [Demo](https://ilia-io.github.io/Open-Space/)
 
-<img src="docs/demo.gif"/>
+<img width="500" src="docs/demo.gif"/>
