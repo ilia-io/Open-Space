@@ -24,9 +24,6 @@ body {
 }
 
 .control-panel {
-  /*position: absolute;
-  bottom: 0;*/
-
   background: rgba(101, 13, 13, 1.0);
   background: -webkit-linear-gradient(top, rgba(101, 13, 13, 1.0), rgba(14, 81, 39, 1.0));
   background: -moz-linear-gradient(top, rgba(101, 13, 13, 1.0), rgba(14, 81, 39, 1.0));
